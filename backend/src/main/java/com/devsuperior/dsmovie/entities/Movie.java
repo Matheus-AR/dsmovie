@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_name")
+@Table(name = "tb_movie")
 public class Movie {
 
 	@Id
@@ -15,7 +15,7 @@ public class Movie {
 	private Long id;
 	private String title;
 	private Double score;
-	private Integer coun;
+	private Integer count;
 	private String image;
 	
 	public Movie() {
@@ -25,7 +25,7 @@ public class Movie {
 		this.id = id;
 		this.title = title;
 		this.score = score;
-		this.coun = coun;
+		this.count = coun;
 		this.image = image;
 	}
 
@@ -53,12 +53,12 @@ public class Movie {
 		this.score = score;
 	}
 
-	public Integer getCoun() {
-		return coun;
+	public Integer getCount() {
+		return count;
 	}
 
-	public void setCoun(Integer coun) {
-		this.coun = coun;
+	public void setCount(Integer coun) {
+		this.count = coun;
 	}
 
 	public String getImage() {
